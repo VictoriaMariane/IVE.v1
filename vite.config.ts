@@ -12,7 +12,7 @@ export default defineConfig(({ mode }) => {
   const isGitHubPages = process.env.GITHUB_ACTIONS === 'true'
 
   return {
-    base: isGitHubPages ? '/IVE.v1/' : process.env.FIGMA_PUBLIC_URL ? `${process.env.FIGMA_PUBLIC_URL}/` : '/',
+    base: isGitHubPages ? '/IVE-Design-Guide/' : process.env.FIGMA_PUBLIC_URL ? `${process.env.FIGMA_PUBLIC_URL}/` : '/',
     build: {
       sourcemap: emitSourcemaps ? 'inline' : false,
       minify: !emitSourcemaps,
